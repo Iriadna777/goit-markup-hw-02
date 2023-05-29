@@ -1,10 +1,22 @@
 :root{
+--body-color: #FFFFFF;
+--hero-background-color: #2E2F42;
 --title-color: #ffffff;
---main-text-color:  #2E2F42;
---secondary-text-color: #434455;
-}
-
-/* перезаписати заголовки */
+--main-text-color: #434455;
+--secondary-text-color: #F4F4FD;
+--logo-color: #4D5AE5;
+--header-accent-logo: #2E2F42;
+--header-menu-link-color: #2E2F42;
+--secondary-header-link-color: #404BBF;
+--address-color: #434455;
+--secondary-address-color: #404BBF;
+--hero-btn-color: #ffffff;
+--hero-btn-background: #4D5AE5;
+--secondary-hero-btn-background: #404BBF;
+--main-subtitle-color: #2E2F42;
+--team-background-color: #F4F4FD;
+--footer-background-color: #2E2F42;
+--footer-accent-logo-color: #F4F4FD;
 
 .link {
   text-decoration: none;
@@ -20,7 +32,7 @@ a {
 
 body {
   font-family: 'Roboto', sans-serif;
-  background: #FFFFFF;
+  background: var(--body-color);
 }
 
 /* Header */
@@ -34,11 +46,11 @@ body {
 font-weight: 800;
 font-size: 18px;
 line-height: 1.17;
-color: #4D5AE5;
+color: var(--logo-color);
 }
 
 .accent-logo{
-  color: #2E2F42;
+  color: var(--header-accent-logo);
 }
 .header-menu {
 }
@@ -48,12 +60,12 @@ color: #4D5AE5;
   font-weight: 500;
 font-size: 16px;
 line-height: 1.5;
-color: #2E2F42;
+color: var(--header-menu-link-color);
 }
 
 .header-menu-link:hover,
 .header-menu-link:focus {
-  color: #404BBF;
+  color: var(--secondary-header-link-color);
 }
 
 /* Address */
@@ -65,41 +77,40 @@ color: #2E2F42;
 .address-list-item {
 }
 .address-list-link {
-  font-weight: 400;
 font-size: 16px;
 line-height: 1.5;
-color: #434455;
+color: var(--address-color)
 }
 
 .address-list-link:hover,
 .address-list-link:focus {
-  color: #404BBF;
+  color: var(--secondary-address-color)
 }
 
 /* Section 1 */
 
 .hero {
-  background: #2E2F42;
+  background: var(--hero-background-color);
 }
 .hero-title {
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
-  color: #ffffff;
+  color: var(--title-color);
 }
 .hero-btn {
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  color: #ffffff;
-  background: #4D5AE5;
+  color: var(--hero-btn-color);
+  background: var(--hero-btn-background);
   cursor: pointer;
 }
 
 .hero-btn:hover,
 .hero-btn:focus {
-  background: #404BBF;
+  background: var(--secondary-hero-btn-background);
 }
 
 /* Section 2 */
@@ -116,13 +127,12 @@ color: #434455;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-  color: #2e2f42;
+  color: var(--main-subtitle-color);
 }
 .advantages-item-text {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  color: #434455;
+  color: var(--main-text-color);
 }
 
 /* Section 3 */
@@ -143,7 +153,7 @@ color: #2E2F42;
 /* Section 4 */
 
 .team {
-  background: #F4F4FD;
+  background: var(--team-background-color);
 }
 .team-title {
   font-weight: 700;
@@ -159,36 +169,74 @@ color: #2E2F42;
   font-weight: 500;
 font-size: 20px;
 line-height: 1.2;
-color: #2E2F42;
+color: var(--main-subtitle-color)
 }
 .team-item-text {
-  font-weight: 400;
 font-size: 16px;
 line-height: 21.5;
-color: #434455;
+color: var(--main-text-color);
+}
 
+/* Projects */
+
+.portfolio {
+}
+.visually-hidden {
+}
+.filter-list {
+}
+.filter-item {
+}
+.filter-btn {
+  font-family: inherit;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+color: #4D5AE5;
+background: #F4F4FD;
+cursor: pointer;
+}
+
+.filter-btn:hover,
+.filter-btn:focus {
+  background: #404BBF;
+  color: #FFFFFF;
+}
+.project-list {
+}
+.project-item {
+}
+.project-subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--main-subtitle-color)
+}
+.project-item-text {
+font-size: 16px;
+line-height: 1.5;
+color: var(--main-text-color);
 }
 
 /* Footer */
 
 .footer {
-  background: #2E2F42;
+  background: var(--footer-background-color);
 }
 .footer-logo {
   font-family: 'Raleway';
 font-weight: 800;
 font-size: 18px;
 line-height: 1.17;
-  color: #4D5AE5;
+  color: var(--logo-color);
 }
 
 .footer-accent-logo{
-  color: #F4F4FD;
+  color: var(--footer-accent-logo-color);
 }
 
 .footer-text {
-  font-weight: 400;
 font-size: 16px;
 line-height: 1.5;
-color: #F4F4FD;
+color: var(--secondary-text-color);
 }
